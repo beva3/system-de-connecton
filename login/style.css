@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(120deg,#1d1c2e,black);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box{
+    border: 1px solid #038f3d;
+    background: linear-gradient(45deg, #21222179, #0f0a6179);
+    border-radius: 9px;
+    box-shadow: 0 15px 25px rgba(206, 196, 196, 0.384);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(26, 235, 8);
+    width: 400px;
+    /* height: 200px; */
+    padding: 2rem 0;
+    h1{
+        /* background: red; */
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    .user-box{
+        position: relative;
+        /* border: 1px solid red; */
+        width: 100%;
+        margin: 20px 0;
+        display: block;
+        input{
+            outline: none;
+            width: 100%;
+            border: none;
+            background: transparent;
+            border-bottom: 2px solid #fff;
+            color: aqua;
+            font-size: 16px;
+            padding-bottom: 5px;
+            /* text-align: center; */
+            /* transition: 0.5s; */
+        }
+        label{
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 16px;
+            /* background: red; */
+            /* padding: 10px 0; */
+            transition: 0.5s;
+        }
+        input:focus ~ label{
+            top: -20px;
+            left: 0;
+            color: #03e9f4;
+            font-size: 12px;
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
